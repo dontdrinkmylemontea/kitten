@@ -97,6 +97,8 @@ class WaterFall extends Component {
                       alt={`pic-${index}`}
                       onLoad={e => this.imgOnLoad(e, columnIndex)}
                       onError={() => this.imgOnError(columnIndex, index)}
+                      onClick={() => window.open(src)}
+                      style={{ cursor: 'pointer' }}
                     />
                   ) : null,
                 )}
