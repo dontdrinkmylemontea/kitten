@@ -16,9 +16,11 @@ export const getCattyPic = (callback, preCall) => {
     },
     (error, response, body) => {
       const bodyObj = JSON.parse(body);
-      const src = bodyObj[0].url;
-      if (callback) {
-        callback(src);
+      if (bodyObj && bodyObj[0]) {
+        const src = bodyObj[0].url;
+        if (callback) {
+          callback(src);
+        }
       }
     },
   );
