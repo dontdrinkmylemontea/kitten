@@ -1,7 +1,10 @@
 // ref: https://umijs.org/config/
+const pathName = './';
+
 export default {
   treeShaking: true,
-  base: '/kitten/',
+  base: pathName,
+  publicPath: pathName,
   routes: [
     {
       path: '/',
