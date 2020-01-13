@@ -1,7 +1,7 @@
 // ref: https://umijs.org/config/
 export default {
   treeShaking: true,
-  base: 'kitten',
+  base: '/kitten/',
   routes: [
     {
       path: '/',
